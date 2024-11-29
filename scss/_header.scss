@@ -1,0 +1,31 @@
+.header {
+    background: rgba(0, 0, 0, 0.411);
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 65px;
+        .navbar__logo {
+            img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .navbar__collection {
+            display: flex;
+            gap: 30px;
+            .navbar__link {
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: .2s;
+                color: #fff;
+                &:hover {
+                    color: #fddb35;
+                }
+            }
+        }
+    }
+}
