@@ -6,9 +6,11 @@
     <title>JavaScript Map va Set</title>
     <link rel="icon" href="./assets/logo.svg">
     <link rel="stylesheet" href="./css/main.min.css">
+    <!-- AOS CSS qo'shish -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
             <nav class="navbar">
                 <div class="navbar__logo">
@@ -38,7 +40,7 @@
     <main class="main">
         
         <!-- hero qism -->
-        <section class="hero">
+        <section class="hero" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__title">
@@ -53,7 +55,7 @@
         </section>
 
         <!-- map qismi -->
-        <section class="map" id="mapID">
+        <section class="map" id="mapID" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
             <div class="container">
                 <h2>Map: Kalit-Qiymat To'plami</h2>
                 <p>Map - har qanday turdagi kalitlar bilan ishlay oladigan kalit-qiymat juftlarini saqlaydi.</p>
@@ -79,17 +81,17 @@
         </section>
 
         <!-- set qismi -->
-         <section class="set" id="setID">
+        <section class="set" id="setID" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
             <div class="container">
                 <h2>Set:</h2>
                 <p>Set - qiymatlarni tartibsiz to‘plamini saqlaydi, takrorlanadigan qiymatlar qabul qilinmaydi.</p>
-
-                <ol>
+        
+                <ol data-aos="fade-up" data-aos-duration="1200">
                     <li><h3>Setning Xususiyatlari</h3></li>
                     <li>1. <i>Noyob qiymatlar: Set bir xil qiymatni faqat bir marta saqlaydi.</i></li>
                     <li>2. <i>Har qanday turdagi qiymatlar: String, number, object, array va boshqalar.</i></li>
                     <li>3. <i>Metodlar orqali boshqarish: Qo‘shish, o‘chirish, va mavjudligini tekshirish.</i></li>
-
+        
                     <li><h3>Setning Metodlari</h3></li>
                     <li>1. <i><i style="font-weight: 500;">add(value)</i> — Yangi qiymat qo‘shadi.</i></li>
                     <li>2. <i><i style="font-weight: 500;">has(value)</i> — Qiymat mavjudligini tekshiradi (true/false).</i></li>
@@ -97,16 +99,26 @@
                     <li>4. <i><i style="font-weight: 500;">clear()</i> — Barcha qiymatlarni o‘chiradi.</i></li>
                     <li>5. <i><i style="font-weight: 500;">size</i> — Setdagi elementlar sonini qaytaradi.</i></li>
                 </ol>
-
-                <div class="set__image">
+        
+                <div class="set__image" data-aos="fade-left" data-aos-duration="1200">
                     <img src="./assets/set.png" alt="image">
                 </div>
             </div>
-         </section>
+        </section>
+        
 
-         <footer class="footer">
+        <footer class="footer">
             <p>&copy; 2024 Javohir Jo'rayev</p>
-         </footer>
+        </footer>
     </main>
+
+    <!-- AOS JavaScript qo'shish -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+        });
+    </script>
 </body>
 </html>
