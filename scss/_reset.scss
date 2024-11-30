@@ -24,3 +24,12 @@ a{
 button, input{
     outline: none;
 }
+html {
+    scroll-behavior: smooth;
+}
+#mapID,
+#setID {
+    position: relative;
+    padding-top: 65px; 
+    margin-top: -65px; 
+}
