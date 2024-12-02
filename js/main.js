@@ -1,4 +1,4 @@
-// 1. Student klassi
+// 1. Student
 export class Student {
     constructor(lname, fname, tel, adress) {
         this.lname = lname;
@@ -22,7 +22,7 @@ export class Student {
     }
 }
 
-// 2. Teacher klassi
+// 2. Teacher
 export class Teacher {
     constructor(lname, fname, adress, salary, level) {
         this.lname = lname;
@@ -41,7 +41,7 @@ export class Teacher {
     }
 }
 
-// 3. Group klassi
+// 3. Group
 export class Group {
     constructor(name, room, level, studentCounts, teacher) {
         this.name = name;
@@ -64,7 +64,7 @@ export class Group {
     }
 }
 
-// 4. Payment klassi
+// 4. Payment 
 export class Payment {
     constructor(from, to, amount, date, status) {
         this.from = from;
@@ -83,7 +83,7 @@ export class Payment {
     }
 }
 
-// 5. Salary klassi
+// 5. Salary 
 export class Salary {
     constructor(to, amount, type, date, status) {
         this.to = to;
@@ -102,7 +102,7 @@ export class Salary {
     }
 }
 
-// 6. Organization klassi
+// 6. Organization 
 export class Organization {
     constructor(name, founder, address, employeeCount) {
         this.name = name;
